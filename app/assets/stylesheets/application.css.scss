@@ -16,6 +16,8 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
@@ -29,6 +31,11 @@ h1, h2, h3 {
 }
 .navbar {
     border: none;
+}
+
+.navbar-brand{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
 }
 
 .home-callout{
@@ -47,5 +54,15 @@ h1, h2, h3 {
     }
 }
 
+.navbar-default .navbar-toggle .iconbar{
+    background-color: white;
+    
+}
 
+.navbar-default .navbar-toggle{
+    border: 2px solid white;
+    &:hover, &:focus {
+        background-color: #00c6ff;
 
+    }
+}
